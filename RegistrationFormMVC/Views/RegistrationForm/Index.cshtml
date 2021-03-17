@@ -1,0 +1,36 @@
+﻿@model RegistrationModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registration Form Details</h1>
+
+
+
+<h3>Registration was succesfull. Thanks @Model.Name</h3>
+
+<table class="table mt-5">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Surname</td>
+        <td>@Model.Age</td>
+        <td>@Model.City</td>
+        <td>@Model.Phone</td>
+        <td>@Model.Email</td>
+    </tr>
+</table>
+
+
+<div>
+    <a asp-action="Create">Back to Form</a>
+</div>
